@@ -1,4 +1,4 @@
-package com.dungeon.bercutbot;
+package com.telegram.bot;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

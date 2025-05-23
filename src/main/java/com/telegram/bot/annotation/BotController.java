@@ -1,4 +1,4 @@
-package com.dungeon.bercutbot.annotation;
+package com.telegram.bot.annotation;
 
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.stereotype.Component;

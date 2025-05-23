@@ -1,4 +1,4 @@
-package com.dungeon.bercutbot.model.DTO;
+package com.telegram.bot.model.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

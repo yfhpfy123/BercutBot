@@ -1,10 +1,10 @@
-package com.dungeon.bercutbot;
+package com.telegram.bot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BercutBotApplicationTests {
+class BotApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,10 +1,10 @@
-package com.dungeon.bercutbot.controler.util;
+package com.telegram.bot.controler.util;
 
-import com.dungeon.bercutbot.annotation.BotCommand;
-import com.dungeon.bercutbot.annotation.BotController;
-import com.dungeon.bercutbot.annotation.BotRequestMapping;
-import com.dungeon.bercutbot.annotation.BotRequestParam;
-import com.dungeon.bercutbot.view.BotView;
+import com.telegram.bot.annotation.BotCommand;
+import com.telegram.bot.annotation.BotController;
+import com.telegram.bot.annotation.BotRequestMapping;
+import com.telegram.bot.annotation.BotRequestParam;
+import com.telegram.bot.view.BotView;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.meta.api.objects.Update;
@@ -31,7 +31,7 @@ public class BotDispatcher {
         Pattern pattern;
         Method method;
         Object bean;
-        List<String> paramNames; // из шаблона, например ["stage"]
+        List<String> paramNames;
     }
 
     private void initRoutes() {
@@ -73,7 +73,7 @@ public class BotDispatcher {
             return update.getMessage().getText().split(" ")[0]; // /start
         }
         if (update.hasCallbackQuery()) {
-            return update.getCallbackQuery().getData(); // например: /bot/register/human
+            return update.getCallbackQuery().getData();
         }
         return null;
     }
@@ -91,7 +91,7 @@ public class BotDispatcher {
                 String cleanedValue = rawValue == null ? null : rawValue.replaceAll("[{}]", "");
                 args[i] = cleanedValue;
             } else {
-                args[i] = null; // или throw
+                args[i] = null;
             }
         }
         return args;

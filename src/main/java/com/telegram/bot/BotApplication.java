@@ -1,13 +1,13 @@
-package com.dungeon.bercutbot;
+package com.telegram.bot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BercutBotApplication {
+public class BotApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BercutBotApplication.class, args);
+        SpringApplication.run(BotApplication.class, args);
     }
 
 }

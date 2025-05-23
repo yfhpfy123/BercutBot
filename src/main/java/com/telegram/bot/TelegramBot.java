@@ -1,7 +1,7 @@
-package com.dungeon.bercutbot;
+package com.telegram.bot;
 
-import com.dungeon.bercutbot.controler.util.BotDispatcher;
-import com.dungeon.bercutbot.view.BotView;
+import com.telegram.bot.controler.util.BotDispatcher;
+import com.telegram.bot.view.BotView;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,7 +35,6 @@ public class TelegramBot extends TelegramLongPollingBot {
                 log.error("Не удалось отправить сообщение: " + e);
             }
         }
-
     }
 
     @Override

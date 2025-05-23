@@ -1,4 +1,4 @@
-package com.dungeon.bercutbot.view;
+package com.telegram.bot.view;
 
 import org.telegram.telegrambots.meta.api.methods.BotApiMethod;
 import org.telegram.telegrambots.meta.api.objects.Update;
